@@ -1,4 +1,19 @@
 .h1 {
 	font-family: 'Neutral Face';
 	font-size: $font-size-h1;
+	text-transform: uppercase;
+	line-height: 110%;
+}
+
+.h2 {
+	font-family: 'Neutral Face';
+	font-size: $font-size-h2;
+	text-transform: uppercase;
+	line-height: 110%;
+}
+
+.text {
+	font-family: 'Manrope';
+	font-size: $font-size-text;
+	line-height: 110%;
 }
