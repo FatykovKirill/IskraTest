@@ -29,6 +29,16 @@ const config = {
             {
                 test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
                 type: 'asset/resource',
+                generator: {
+                    filename: 'assets/img/[name][ext]'
+                }
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/fonts/[name][ext]'
+                }
             },
             { test: /\.css$/, use: ['style-loader', 'css-loader', 'postcss-loader'] },
             {
