@@ -16,6 +16,13 @@
 
 .header__body {
 	display: flex;
+	gap: 156px;
+}
+
+.header__info {
+	display: flex;
+	flex-direction: column;
+	gap: 69px;
 }
 
 .header__text {
@@ -31,27 +38,52 @@
 }
 
 .header__statistic-item {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	gap: 4px;
 	padding-left: 8px;
-	border-left: 1px solid $color-black;
+}
+
+.header__statistic-item::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 20px;
+	width: 1px;
+	background-color: $color-black;
 }
 
 .header__statistic-item:nth-child(1) {
 	padding-top: 44px;
 }
 
+.header__statistic-item:nth-child(1)::before {
+	height: 169px;
+}
+
 .header__statistic-item:nth-child(2) {
 	padding-top: 318px;
+}
+
+.header__statistic-item:nth-child(2)::before {
+	height: 446px;
 }
 
 .header__statistic-item:nth-child(3) {
 	padding-top: 222px;
 }
 
+.header__statistic-item:nth-child(3)::before {
+	height: 350px;
+}
+
 .header__statistic-item:nth-child(4) {
 	padding-top: 419px;
+}
+
+.header__statistic-item:nth-child(4)::before {
+	height: 547px;
 }
 
 .header__statistic-number {
