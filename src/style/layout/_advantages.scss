@@ -1,0 +1,46 @@
+.advantages {
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+}
+
+.advantages__item {
+	padding-bottom: 64px;
+	border-bottom: 1px solid $color-black;
+	display: flex;
+	align-items: center;
+	gap: 288px;
+}
+
+.advantages__header {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 548px;
+}
+
+.advantages__text {
+	color: $color-black
+}
+
+.advantages___body {
+	display: flex;
+	gap: 161px;
+}
+
+.advantages__list {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.advantages__list-items {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.advantages__list-item {
+	color: $color-dark-grey;
+}
